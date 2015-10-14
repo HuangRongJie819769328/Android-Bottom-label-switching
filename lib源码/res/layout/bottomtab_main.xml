@@ -1,0 +1,184 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/bottomtab_rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 顶部 -->
+
+        <RelativeLayout
+            android:id="@+id/bottomtab_top_tab"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </RelativeLayout>
+
+        <!-- 底部tab -->
+
+        <LinearLayout
+            android:id="@+id/bottomtab_ll_bottom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:baselineAligned="true"
+            android:background="#f9f9f9"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/bottomtab_rl_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/bottomtab_iv_one"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/bottomtab_tv_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bottomtab_iv_one"
+                    android:layout_centerHorizontal="true"
+                    android:text="one"
+                    android:textColor="#c8bca5"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomtab_rl_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/bottomtab_iv_two"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/bottomtab_tv_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bottomtab_iv_two"
+                    android:layout_centerHorizontal="true"
+                    android:text="two"
+                    android:textColor="#c8bca5"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomtab_rl_thr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/bottomtab_iv_thr"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/bottomtab_tv_thr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bottomtab_iv_thr"
+                    android:layout_centerHorizontal="true"
+                    android:text="thr"
+                    android:textColor="#c8bca5"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomtab_rl_four"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/bottomtab_iv_four"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/bottomtab_tv_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bottomtab_iv_four"
+                    android:layout_centerHorizontal="true"
+                    android:text="four"
+                    android:textColor="#c8bca5"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomtab_rl_five"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/bottomtab_iv_five"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/bottomtab_tv_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bottomtab_iv_five"
+                    android:layout_centerHorizontal="true"
+                    android:text="five"
+                    android:textColor="#c8bca5"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 内容部分， fragment切换 -->
+
+        <RelativeLayout
+            android:id="@+id/bottomtab_content_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomtab_line"
+            android:layout_below="@+id/bottomtab_top_tab"
+            android:orientation="vertical" >
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/bottomtab_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/bottomtab_ll_bottom_tab"
+            android:layout_marginBottom="5dp"
+            android:background="#c8bca5" />
+    </RelativeLayout>
+
+</FrameLayout>
